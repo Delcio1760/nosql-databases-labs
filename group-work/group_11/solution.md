@@ -57,6 +57,8 @@ Summarize the lab brief, the business goals, and the constraints that shaped the
 
 Describe entity boundaries, embedding vs. referencing choices, and how the schema satisfies the requirements.
 
+
+
 ### Design Decisions
 
 1. **Document modeling** – explain how documents were structured to optimize reads/writes.
@@ -73,6 +75,20 @@ Describe entity boundaries, embedding vs. referencing choices, and how the schem
 ---
 
 ## Implementation
+### Implementação das Queries
+
+As queries foram implementadas em JavaScript e executadas através do `mongosh`.
+Todos os scripts encontram-se na pasta `project/queries/`.
+
+- **Q01–Q03**: Criação de índices (`01_indexes.js`)
+- **Q04–Q06**: Inserção de dados base (`02_inserts.js`)
+- **Q07–Q12**: Consultas de leitura (`03_finds.js`)
+- **Q13–Q16**: Operações de escrita e atualização (`04_updates.js`)
+- **Q17**: Remoção de dados (`05_deletes.js`)
+- **Q18–Q20**: Agregações e análises (`06_aggregations.js`)
+
+As queries foram testadas localmente no MongoDB Compass, confirmando a criação das coleções, inserção de dados e execução correta das operações.
+
 
 ### Setup Instructions
 
